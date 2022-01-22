@@ -47,14 +47,14 @@ function charFromLowtoHigh(low,high) {
 
 // Second, used the array function I created to make arrays from the ascii codes
 
-const lowerChar = charFromLowtoHigh(97,122);
-const upperChar = charFromLowtoHigh(65,90);
-const numberChar = charFromLowtoHigh(48,57);
-const symbolChar = charFromLowtoHigh(34,47);
 
 
 // Third, the generate password function itself
 function generatePassword (upperCase,numbers,symbols) {
+const lowerChar = charFromLowtoHigh(97,122);
+const upperChar = charFromLowtoHigh(65,90);
+const numberChar = charFromLowtoHigh(48,57);
+const symbolChar = charFromLowtoHigh(34,47);
   // I set the lowercase as default, then added if statements for the others
   let charCodes = lowerChar
   if (upperCase = true) charCodes = charCodes.concat(upperChar)
