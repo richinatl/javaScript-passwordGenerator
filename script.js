@@ -50,25 +50,27 @@ function charFromLowtoHigh(low,high) {
 
 
 // Third, the generate password function itself
-function generatePassword (upperCase,numbers,symbols) {
-const lowerChar = charFromLowtoHigh(97,122);
-const upperChar = charFromLowtoHigh(65,90);
-const numberChar = charFromLowtoHigh(48,57);
-const symbolChar = charFromLowtoHigh(34,47);
+  function generatePassword (upperCase,numbers,symbols) {
+  const lowerChar = charFromLowtoHigh(97,122);
+  const upperChar = charFromLowtoHigh(65,90);
+  const numberChar = charFromLowtoHigh(48,57);
+  const symbolChar = charFromLowtoHigh(34,47);
+  
   // I set the lowercase as default, then added if statements for the others
   let charCodes = lowerChar
+  
   if (upperCase = true) charCodes = charCodes.concat(upperChar)
   if (numbers = true) charCodes = charCodes.concat(numberChar)
   if (symbols = true) charCodes = charCodes.concat(symbolChar)
   
-  let Password = []
+  let password = []
 
 // Made a for loop, then pushed to characters into the empty array
 // Converted the array to a string to complete the project
   for (let i = 0; i < length; i++) {
     let character = charCodes[Math.floor(Math.random() * charCodes.length)]
-    Password.push(String.fromCharCode(character));
+    password.push(String.fromCharCode(character));
     
   }
-  return Password.join('');
+  return password.join('');
 }
