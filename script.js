@@ -18,14 +18,14 @@ generateBtn.addEventListener("click", writePassword);
 // First gather required data
 
 let length = Number(prompt("How many characters would you like your password to be?"));
-while (isNaN(length) || length < 8 || length > 128) length = Number(prompt("Length must be 8-128 characters. How many characters would you like your password to be?"));
+if (isNaN(length) || length < 8 || length > 128) length = Number(prompt("Length must be 8-128 characters. How many characters would you like your password to be?"));
 
 let upperCase = confirm("Would you like to use uppercase letters?");
 let lowerCase = confirm("Would you like to use lowercase letters?");
 let numbers = confirm("Would you like to use numbers?");
 let symbols = confirm("Would you like to symbols?");
-
-while (!upperCase && !lowerCase && !numbers && !symbols) {
+console.log(upperCase,lowerCase,numbers,symbols)
+if (!upperCase && !lowerCase && !numbers && !symbols) {
   alert("You must select at least one character type!");
   upperCase = confirm("Would you like to use uppercase letters?");
   lowerCase = confirm("Would you like to use lowercase letters?");
@@ -46,23 +46,21 @@ function charFromLowtoHigh(low,high) {
 }
 
 // Second, used the array function I created to make arrays from the ascii codes
+// Then used those arrays inside the generate password function for object oriented programming
 
-
-
-// Third, the generate password function itself
-  function generatePassword (upperCase,numbers,symbols) {
+  function generatePassword () {
   const lowerChar = charFromLowtoHigh(97,122);
   const upperChar = charFromLowtoHigh(65,90);
   const numberChar = charFromLowtoHigh(48,57);
   const symbolChar = charFromLowtoHigh(34,47);
   
-  // I set the lowercase as default, then added if statements for the others
-  let charCodes = lowerChar
-  
-  if (upperCase = true) charCodes = charCodes.concat(upperChar)
-  if (numbers = true) charCodes = charCodes.concat(numberChar)
-  if (symbols = true) charCodes = charCodes.concat(symbolChar)
-  
+  // I set an empty array to concat user options
+  let charCodes = []
+  if (lowerCase) charCodes = charCodes.concat(lowerChar)
+  if (upperCase) charCodes = charCodes.concat(upperChar)
+  if (numbers) charCodes = charCodes.concat(numberChar)
+  if (symbols) charCodes = charCodes.concat(symbolChar)
+
   let password = []
 
 // Made a for loop, then pushed to characters into the empty array
