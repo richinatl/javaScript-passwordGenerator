@@ -7,6 +7,8 @@ While this seemed like a simple idea at first glance I learned quite a bit from 
 
 There were several ways to go about accomplishing the goal, after going through several options I decided to use ascii letter codes in an array, in my opinion that provided the simplest, cleanest implementation, as oppossed to creating long individual strings of letters, numbers, and symbols. My hope is as my projects increase in complexity over the next several months, my maturation will be reflected in these repositories, always learning, always improving.
 
+
+
 The github respository can be found here https://github.com/richinatl/javaScript-passwordGenerator
 
 The finished project can be found here https://richinatl.github.io/javaScript-passwordGenerator/
