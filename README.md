@@ -1,7 +1,7 @@
 
 # javaScript-passwordGenerator
 
-The goal was to create a password generator using javaScript.
+The goal was to create a simple password generator using javaScript.
 A password generator is a very useful tool in many instances.
 While this seemed like a simple idea at first glance I learned quite a bit from this project.
 
