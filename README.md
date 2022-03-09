@@ -7,6 +7,10 @@ While this seemed like a simple idea at first glance I learned quite a bit from 
 
 There were several ways to go about accomplishing the goal, after going through several options I decided to use the ascii letter codes in an array, in my opinion that provided the simplest, cleanest implementation, as oppossed to creating individual strings of letters, numbers, and symbols. 
 
+Languages: HTML, CSS, JavaScript
+
+Contact: github or email at richinatl@gmail.com 
+
 
 The github respository can be found here https://github.com/richinatl/javaScript-passwordGenerator
 
