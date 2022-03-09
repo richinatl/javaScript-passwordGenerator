@@ -7,6 +7,7 @@ While this seemed like a simple idea at first glance I learned quite a bit from 
 
 There were several ways to go about accomplishing the goal, after going through several options I decided to use ascii letter codes in an array, in my opinion that provided the simplest, cleanest implementation, as oppossed to creating long individual strings of letters, numbers, and symbols. My hope is as my projects increase in complexity over the next several months, my maturation will be reflected in these repositories, always learning, always improving.
 
+
 ![Screenshot 2022-03-09 150944](https://user-images.githubusercontent.com/95508564/157526830-1e920630-90d8-4da7-961d-02bffca8b3a3.png)
 
 
